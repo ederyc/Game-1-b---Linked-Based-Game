@@ -1,0 +1,229 @@
+{
+    "Title": "The Jitters of the First",
+    "Credits": "Created by Adam Smith (amsmith@ucsc.edu).",
+    "InitialLocation": "Intro",
+    "Locations": {
+        "Intro": {
+            "Body": "You have just finished moving your final box from your dad's car into your new room.  It's your first day of college and you're filled with excitement.  Just as your parent's are about to leave",
+            "Choices": [
+                {
+                    "Text": "You give them a hug and tell them you'll miss them",
+                    "Target": "Start_1"
+                },
+                {
+                    "Text": "You thank them and tell them you'll call them later",
+                    "Target": "Start_2"
+                }
+            ]         
+        },
+        "Start_1":{
+            "Body": "\"We'll miss you to, enjoy yourself and don't be afraid to call!\", they say. Once they close the door, the question of \"what do I do now?\" comes to your head.",
+            "Choices": [
+          
+                {
+                    "Text": "You decide to go explore the campus and perhaphs find your classes",
+                    "Target": "Explore Campus"
+                }
+            ]
+        },
+        "Start_2":{
+            "Body": "\"Have fun! We'll catch up later\", they say as they leave. Once they close the door, the question of \"what do I do now?\" comes to your head.",
+            "Choices": [
+                {
+                    "Text": "You decide to go explore the campus and perhaphs find your classes",
+                    "Target": "Explore Campus"
+                }
+            ]
+        },
+
+
+        "Explore Campus": {
+            "Body": "You decide to go out and explore  campus, where to first?",
+            "Choices": [
+                {
+                    "Text": "Dining Hall",
+                    "Target": "Dining Hall"
+                },
+                {
+                    "Text": "Big Field",
+                    "Target": "Big Field"
+                },
+                {
+                    "Text": "Science Building",
+                    "Target": "Science Building"
+                },
+                {
+                    "Text": "Engineering Building",
+                    "Target": "Engineering Building Locked"
+                }
+            ]
+        },
+        "Science Building": {
+            "Body": "You arrive at the Science Building, full of labs and and coats. You take a look around",
+            "Choices": [
+                {
+                    "Text": "Head Over to the Dining Hall",
+                    "Target": "Dining Hall"
+                },
+                {
+                    "Text": "Head Over to the Engineering Building",
+                    "Target": "Engineering Building Locked"
+                },
+                {
+                    "Text": "Head Over to the big field",
+                    "Target": "Big Field"
+                },
+                {
+                    "Text": "Classroom 1",
+                    "Target": "Classroom 1"
+                },
+                {
+                    "Text": "Classroom 2",
+                    "Target": "Classroom 2 (location specific interactive mechanism)"
+                }
+         
+            ]
+        },
+        "Classroom 1": {
+            "Body": "Nothing much here, just a couple of beakers and tubes",
+            "Choices": [
+                {
+                    "Text": "Head back",
+                    "Target": "Science Building"
+                }
+            ]
+        },
+        "Classroom 2 (location specific interactive mechanism)": { 
+            "Body": "There's a red liquid inside a flask and some powder laying around",
+            "Choices": [
+                {
+                    "Text": "Head back",
+                    "Target": "Science Building"
+                },
+                {
+                    "Text": "Pour blue powder",
+                    "Target": "Purple"
+                },
+                {
+                    "Text": "Pour green powder",
+                    "Target": "Brown"
+                },
+                {
+                    "Text": "Pour white powder",
+                    "Target": "Pink"
+                },
+                {
+                    "Text": "Pour purple powder",
+                    "Target": "Magenta"
+                }
+            ]
+        },
+        "Purple": {
+            "Body": "A purple cloud of smoke explodes out of the flask!",
+            "Choices": [
+                {
+                    "Text": "Try a different mixture",
+                    "Target": "Classroom 2 (location specific interactive mechanism)"
+                }
+            ]
+        },
+        "Brown": {
+            "Body": "A brown cloud of smoke explodes out of the flask!",
+            "Choices": [
+                {
+                    "Text": "Try a different mixture",
+                    "Target": "Classroom 2 (location specific interactive mechanism)"
+                }
+            ]
+        },
+        "Magenta": {
+            "Body": "A magenta cloud of smoke explodes out of the flask!",
+            "Choices": [
+                {
+                    "Text": "Try a different mixture",
+                    "Target": "Classroom 2 (location specific interactive mechanism)"
+                }
+            ]
+        },
+        "Pink": {
+            "Body": "A pink cloud of smoke explodes out of the flask!",
+            "Choices": [
+                {
+                    "Text": "Try a different mixture",
+                    "Target": "Classroom 2 (location specific interactive mechanism)"
+                }
+            ]
+        },
+        "Engineering Building Locked": {
+            "Body": "You arrive at the Engineering Building, nothing of much interest except a room tucked away in the corner which is locked.",
+            "Choices": [
+                {
+                    "Text": "Head Over to the Dining Hall",
+                    "Target": "Dining Hall"
+                },
+                {
+                    "Text": "Head Over to the Science Building",
+                    "Target": "Science Building"
+                },
+                {
+                    "Text": "Head Over to the big field",
+                    "Target": "Big Field"
+                }
+             
+            
+            
+            ]
+        },
+        "Big Field": {
+            "Body": "What a sight!  This is the biggest open field you've seen at any college, it is part of the reason you chose to go here.  Where do you go from here?",
+            "Choices": [
+                {
+                    "Text": "Head Over to the Dining Hall",
+                    "Target": "Dining Hall"
+                },
+                {
+                    "Text": "Head Over to the Engineering Building",
+                    "Target": "Engineering Building Locked"
+                },
+                {
+                    "Text": "Head Over to the Science Building",
+                    "Target": "Science Building"
+                },
+                {
+                    "Text": "Look behind bush",
+                    "Target": "Bush"
+                },
+                {
+                    "Text": "Sit at a bench",
+                    "Target": "Bench"
+                }
+              
+            ]
+        },
+        "Bench": {
+            "Body": "You sit down and relax, you've done a lot of walking today and these hills are not kind to your calves.  After your rest, you go back to the field",
+            "Choices": [
+                {
+                    "Text": "Back to the field",
+                    "Target": "Big Field"
+                }
+            ]
+        },
+        "Bush": {
+            "Body": "There's a key here! It read \"Computer Lab\", you figure out that it might just be the key to that room in the engineering building.",
+            "Choices": [
+                {
+                    "Text": "Head Over to the Engineering Building",
+                    "Target": "Engineering Building Unlocked"
+                }
+              
+            ]
+        },
+
+        "Engineering Building Unlocked": {
+            "Body": "You insert the key and--to your amazement--it actually does open the door! You walk into this computer lab full of retro tech.  You play around with some of it (and end up taking some with you too).  What a great first day!"
+        }
+
+       
+    }
+}
